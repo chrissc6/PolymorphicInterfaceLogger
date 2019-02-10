@@ -10,6 +10,9 @@ namespace PolymorphicInterfaceLogger
     {
         static void Main(string[] args)
         {
+            ILoggerInterface log = ILoggerFactoryClass.GetLogger();
+
+            log.WriteToLog("Hello World");
         }
     }
 }
